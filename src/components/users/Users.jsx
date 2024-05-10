@@ -22,6 +22,7 @@ function Users({ data }) {
           </button>
           <button onClick={() => setPanel(!panel)}>Panel</button>
           <div className={`user-panel ${panel ? "open" : ""}`}>
+            <button onClick={() => setPanel(!panel)}>Close</button>
             <h1>Name: {user.name}</h1>
             <hr />
             <h3>Prodession: {user.profession}</h3>
